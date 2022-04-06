@@ -14,7 +14,7 @@ drwxr-xr-x  65535 staff   2.9M  9 Jun 15:11 pages/
 The file `redirects.nt` corresponds to a file containing Wikipedia redirects that lead different spellings of a page title to the "real" title for the page. The structure of the file looks like this:
 
 ```
-$ds_hr/wikiparsing │ wikipedia ?2  head -10 data/redirects.nt                                                                                  ✔ │ base Py │ 14:15:33 
+$ head -10 data/redirects.nt                                                                                  ✔ │ base Py │ 14:15:33 
 <http://dbpedia.org/resource/'N_Sync> <http://dbpedia.org/ontology/wikiPageRedirects> <http://dbpedia.org/resource/NSYNC> .
 <http://dbpedia.org/resource/1_E19_s_and_more> <http://dbpedia.org/ontology/wikiPageRedirects> <http://dbpedia.org/resource/Terasecond_and_longer> .
 <http://dbpedia.org/resource/2010_World_Cup> <http://dbpedia.org/ontology/wikiPageRedirects> <http://dbpedia.org/resource/2010_FIFA_World_Cup> .

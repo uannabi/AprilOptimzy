@@ -6,7 +6,7 @@ from pyspark.sql import SparkSession
 
 sys.stdout = open(sys.stdout.fileno(), mode='w', encoding='utf8', buffering=1)
 spark = SparkSession.builder.appName("Optmyzy").getOrCreate()
-df = spark.read.json('/home/ec2-user/environment/data/pages/*.json')
+df = spark.read.json('Data_path')
 df.printSchema()
 # root
 #  |-- annotations: array (nullable = true)
@@ -78,4 +78,4 @@ df3.show()
 # +--------------------+--------------------+-----+
 
 path = 'your_path'
-df3.coalesce(1).write.tsv(path + "output", mode='overwrite', header=True)
+df3.coalesce(1).write.csv(path + "output", mode='overwrite', header=True)
